@@ -1,0 +1,576 @@
+$blueBg: #083C6E;
+$grey: #B1B6CA;
+$mainFont: 'Poppins', sans-serif;
+$secondFont: 'Rubik', sans-serif;
+
+*
+    margin-left: 0
+    margin-top: 0
+    margin-bottom: 0
+button, a 
+    &:hover
+        cursor: pointer
+.font-style 
+    font-family: $mainFont
+    font-style: normal
+    font-weight: 600
+    color: black
+.secondFontStyle 
+    font-family: $secondFont
+    font-style: normal;
+    font-weight: normal;
+.btn 
+    background: #083C6E
+    color: white
+    font-family: 'DM Sans', sans-serif
+    height: 56px
+    border: none
+    transition: 0.8s
+    &:focus
+        outline: none
+    &:hover
+        cursor: pointer
+        background: #fff
+        color: $blueBg
+        border: 1px solid $blueBg
+.content 
+    position: relative
+    margin-left: auto
+    margin-right: auto
+    width: 1120px
+#header
+    background-image: url(../img/headerBg.jpg)
+    background-size: cover
+    width: 100vw - 1.07vw
+    height: 846px
+    
+.contentHeader
+    position: relative
+    margin-left: 245px
+    margin-right: auto
+    width: 1120px
+#nav
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding-top: 55px
+.navBtns 
+    position: absolute
+    right: 0
+
+#showRoom
+    position: relative
+    display: inline-block
+    font-size: 14px
+    line-height: 24px
+    background: none
+    border: none
+    margin-right: 60px
+    transition: 5s
+    @extend .font-style
+    &::after
+        display: block;
+        position: absolute;
+        left: 15px; 
+        width: 0;
+        height: 2px;
+        background-color: $blueBg; 
+        content: "";
+        transition: width 0.3s ease-out; 
+    &:hover::after,
+    &:focus::after
+        width: 51px; 
+#contact 
+    width: 195px
+    @extend .btn
+#product 
+    position: relative
+    font-size: 14px
+    line-height: 24px
+    background: none
+    border: none
+    margin-right: 60px
+    @extend .font-style
+    &::after
+        display: block;
+        position: absolute;
+        left: 15px; 
+        width: 0;
+        height: 2px;
+        background-color: $blueBg; 
+        content: "";
+        transition: width 0.3s ease-out; 
+    &:hover::after,
+    &:focus::after
+        width: 41px; 
+.headerInfo 
+    width: 452px
+    margin-top: 213px
+.headerTitle
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 84px;
+    color: black;
+    margin-bottom: 5px
+.headerTxt
+    @extend .secondFontStyle
+    font-size: 18px
+    line-height: 28px
+    color: $grey
+    margin-bottom: 23px
+#headerInput
+    background: #F1F1F1;
+    width: 298.23px
+    height: 50.45px
+    border: none
+    &:focus
+        outline: none
+.search 
+    font-family: $mainFont
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    background: $blueBg
+    color: white
+    width: 138px
+    height: 51px
+    border: none
+    transition: 0.8s
+    &:hover
+        background: #fff
+        color: $blueBg
+        border: 1px solid $blueBg
+        
+/*
+    
+ Fave Kits section 
+
+ */
+#faveKits
+    margin-top: 150px
+#kitsTitle 
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 64px;
+    color: #000000;
+    text-align: center
+.kitsFlex 
+    display: flex
+    flex-direction: row
+    position: relative
+    justify-content: center
+    align-items: center
+.kitsEllipse 
+    position: absolute
+    margin-left: -1000px
+    margin-top: -400px
+    z-index: 0
+.kitsCol 
+    z-index: 1
+    position: relative
+.kitsColSale
+    position: absolute
+    width: 80px
+    height: 32px
+    background: $blueBg
+    text-align: center
+    text-transform: uppercase
+    padding-top: 5px
+    @extend .secondFontStyle
+    font-size: 14px;
+    line-height: 30px;
+    color: white
+    border: none
+    margin-top: 24px
+    margin-left: 34px
+.kitsColInfo 
+    position: relative
+    display: flex
+    flex-direction: row
+    background: $blueBg
+    position: absolute
+    margin-top: -60px
+    margin-left: 15px
+    width: 357px
+    opacity: 0.9;
+    color: white
+    align-items: center
+.kitsColTitle 
+    font-family: $mainFont
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 12px
+    margin-top: 13px
+    margin-left: 12px
+.kitsColPrice 
+    position: absolute
+    font-family: $mainFont
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 12px
+    margin-top: 13px
+    right: 12px
+    border: 1.5px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+/*
+
+ furniture
+
+ */
+#furniture 
+    margin-top: 167px
+.furnitureFlex
+    display: flex
+    flex-direction: row
+    position: relative
+.furnitureContent 
+    width: 445px
+.furnitureHeadline 
+    font-family: $mainFont
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px
+.furnitureTitle
+    font-family: $mainFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 64px;
+    margin-bottom: 20px
+.furnitureLine
+    width: 154px;
+    height: 6px;
+    background: $blueBg
+    margin-bottom: 25px
+.furnitureTxt
+    font-family: $secondFont
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #B1B6CA;
+    margin-bottom: 50px
+.furnitureBtn 
+    width: 223px
+    @extend .btn
+.furnitureEllipse
+    position: absolute
+    margin-top: 280px
+    margin-left: -160px
+    z-index: 0
+.furnitureImg
+    position: relative
+    margin-left: 180px
+    z-index: 1
+#videoSection 
+    margin-top: 240px
+.videoContent
+    width: 1000px
+    margin-left: auto
+    margin-right: auto
+#furnitureVideo
+    width: 1000px
+    height: 450px
+    z-index: 0
+.videoFront
+    position: absolute
+    width: 1000px
+    height: 450px
+    background: #152242;
+    opacity: 0.5;
+    z-index: 1
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+.videoPlay
+    width: 124px
+    height: 124px
+    background: none
+    border-radius: 120px
+    border: 1.5px solid #FFFFFF;
+    box-sizing: border-box;
+    &:focus
+        outline: none 
+#benefits 
+    margin-top: 165px
+.benefitsPreTitle
+    @extend .font-style
+    font-weight: normal;
+    font-size: 18px;
+    
+    /* or 189% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;   
+.benefitsTitle 
+    @extend .font-style
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    /* or 126% */
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 10px
+.benefitsLine
+    background: $blueBg
+    width: 183px
+    height: 7px
+.benefitsFlex
+    display: flex
+    flex-direction: row
+    margin-top: 60px
+    column-gap: 29px
+.benefitsCol
+    display: flex
+    flex-direction: row
+.benefitsColTxts
+    display: flex
+    flex-direction: column
+.benefitsImgBg
+    width: 96px
+    height: 96px
+    border-radius: 150px
+    background: #FFFFFF;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.07);
+    margin-right: 15px
+    display: flex
+    align-items: center
+    justify-content: center
+.benefitsColTitle
+    @extend .font-style
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+    color: #000000;
+.benefitsColTxt
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    display: flex;
+    align-items: center;
+    color: #B1B6CA;
+    width: 263px
+/* DISKOUNT */
+.discountFlex
+    display: flex
+    flex-direction: row
+    margin-top: 146px
+    column-gap: 86px
+.discountCol
+    display: flex
+    flex-direction: column
+    position: relative
+.diskountRectEllipse
+    width: 230px
+    position: absolute
+    z-index: 2
+.diskont30
+    @extend .font-style
+    position: absolute
+    font-size: 62px;
+    line-height: 60px;
+    /* or 97% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 30px
+    margin-left: 31px
+    z-index: 2
+.diskountEllipse
+    position: absolute
+    margin-top: 310px
+    margin-left: 170px
+    z-index: 1
+.discountEllipses
+    width: 203px
+    position: absolute
+    z-index: 0
+    margin-top: 500px
+    margin-left: -100px
+.salePhoto
+    z-index: 1
+.discountPreTitle
+    @extend .font-style
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+    /* or 189% */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 126px
+.discountTitle
+    @extend .font-style
+    font-size: 38px;
+    line-height: 48px;
+    /* or 126% */
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-top: 20px
+.discountLine
+    background: #083C6E;
+    width: 154px;
+    height: 6px;
+    margin-top: 20px
+.discountTxt 
+    @extend .font-style
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    display: flex;
+    align-items: center;
+    color: #B1B6CA;
+    margin-top: 25px 
+.discountBtn
+    @extend .btn
+    margin-top: 50px
+    width: 223px
+    text-align: center
+    padding-top: 20px
+    height: 36px
+#subscribe
+    background: #F8F8F8;
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 234px
+    z-index: 1
+.subscribeTitle
+    @extend .font-style
+    font-size: 38px;
+    line-height: 48px;
+    /* or 126% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* Blue */
+    color: #083C6E;
+    margin-top: 75px
+    margin-bottom: 20px
+.subcribeTxt
+    @extend .font-style
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #B1B6CA;
+    width: 585px
+    margin-top: 25px
+    margin-bottom: 40px
+.subcribeInput
+    background: #FFFFFF;
+    border: 1px solid #075DB0;
+    box-sizing: border-box;
+    width: 787px
+    height: 68px
+    padding-left: 30px
+    padding-top: 5px
+    &::placeholder
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 16px;
+        /* identical to box height, or 94% */
+        letter-spacing: 0.11em;
+        text-transform: uppercase;
+        color: #706464;
+.subscribeForm
+    position: relative
+    margin-bottom:  87px
+.subscribe
+    position: absolute
+    margin-left: -215px
+    margin-top: 5px
+    @extend .btn
+    width: 209px
+#footer
+    background: #152242;
+    width: 100vw-1.07vw
+    position: absolute
+    margin-top: -240px
+    z-index: 0
+.footerFlex
+    display: flex
+    flex-direction: row
+    column-gap: 160px
+.footerCol
+    margin-top: 350px
+    display: flex
+    flex-direction: column
+.footerTitle
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 750;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    color: #FFFFFF;
+    margin-bottom: 30px
+.footerA
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    color: #FFFFFF;
+    margin-bottom: 20px
+    text-decoration: none
+.footerAddress
+    font-family: 'poppins';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+.footerLine
+    background: rgba(255, 255, 255, 0.15);
+    height: 1px
+    width: 1100px
+    margin-top: 107px
+    margin-bottom: 31px
+.footerPay
+    display: flex
+    flex-direction: row
+    column-gap: 12px
+    margin-left: 52.5vw
+    padding-bottom: 31px
+.footerBottom
+    background: #152242;
